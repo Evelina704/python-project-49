@@ -21,6 +21,7 @@ dev = [
 ]
 
 
+
 [project.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
 brain-even = "brain_games.scripts.brain_even:main"
@@ -41,4 +42,11 @@ ignore = [
   "ANN",    # type hints
   "COM812", # trailing comma
     "T201",     # разрешаем print
+]
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "brain_games/**",
+  "README.md",
+  "pyproject.toml",
 ]
