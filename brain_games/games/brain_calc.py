@@ -1,10 +1,9 @@
 import random
 
+RULE = 'What is the result of the expression?'
 
-DESCRIPTION = 'What is the result of the expression?'
 
-
-def get_question_and_answer():
+def generate_round():
     a = random.randint(1, 20)
     b = random.randint(1, 20)
     operation = random.choice(['+', '-', '*'])
@@ -18,9 +17,3 @@ def get_question_and_answer():
 
     question = f'{a} {operation} {b}'
     return question, str(result)
-
-
-GAME_DATA = {
-    'description': DESCRIPTION,
-    'get_question_and_answer': get_question_and_answer,
-}
