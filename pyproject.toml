@@ -1,12 +1,6 @@
 [project]
 name = "hexlet-code"
 version = "0.1.0"
-<<<<<<< HEAD
-description = "Add your description here"
-readme = "README.md"
-requires-python = ">=3.12"
-dependencies = []
-=======
 description = "Brain Games project"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -31,6 +25,10 @@ dev = [
 brain-games = "brain_games.scripts.brain_games:main"
 brain-even = "brain_games.scripts.brain_even:main"
 brain-calc = "brain_games.scripts.brain_calc:main"
+brain-gcd = "brain_games.scripts.brain_gcd:main"
+brain-progression = "brain_games.scripts.brain_progression:main"
+brain-prime = "brain_games.scripts.brain_prime:main"
+
 
 [tool.ruff]
 line-length = 79
@@ -44,4 +42,3 @@ ignore = [
   "COM812", # trailing comma
     "T201",     # разрешаем print
 ]
->>>>>>> 2cf48425cfd82d0ae600763eb06dede55374d2ec
